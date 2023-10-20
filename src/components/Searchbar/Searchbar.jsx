@@ -1,6 +1,6 @@
+import * as Yup from 'yup';
 import { Formik } from 'formik';
 import { ImSearch } from "react-icons/im";
-import * as Yup from 'yup';
 import { ErrorNotification, SearchBar, SearchBtn, SearchForm, SearchFormInput } from './Searchbar.styled';
 
 const formSchema = Yup.object().shape({
@@ -9,7 +9,7 @@ const formSchema = Yup.object().shape({
         .required('This field is required!'),
 });
 
-export const Searchbar = ({getInput}) => {
+export const Searchbar = ({ getInput }) => {
     return (
         <SearchBar>
             <Formik

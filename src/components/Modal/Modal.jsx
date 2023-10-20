@@ -21,7 +21,7 @@ const customStyles = {
   },
 };
 
-export const ItemModal = ({isModalOpen, closeModal, largeImage}) => {
+export const ItemModal = ({ isModalOpen, closeModal, largeImage }) => {
     return (
         <Modal
             isOpen={isModalOpen}
